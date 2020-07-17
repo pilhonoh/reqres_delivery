@@ -16,5 +16,5 @@ spec:
         - name: delivery
           image: admin4acr.azurecr.io/delivery
           ports:
-            - containerPort: 8080
+            - containerPort: 8080 
  
