@@ -4,13 +4,16 @@ metadata:
   name: delivery
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: delivery
   template:
     metadata:
       labels:
         app: delivery
     spec:
       containers:
-        - name: product
+        - name: delivery
           image: myeventstormingregistry.azurecr.io/delivery
           ports:
             - containerPort: 8080
